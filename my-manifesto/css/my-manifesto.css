@@ -1,0 +1,358 @@
+/* --- CSS for NightOwl Software Manifesto --- */
+
+/* --- Fonts --- */
+
+
+/*---    font-family: 'Oswald', sans-serif;
+
+         font-family: 'Indie Flower', cursive;
+
+         font-family: 'Raleway', sans-serif;
+
+
+         font-family: 'Teko', sans-serif;
+
+         font-family: 'Six Caps', sans-serif;
+
+         font-family: 'Lobster Two', cursive;
+---*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	background-color: #e6f2ff;
+	color: black;
+	padding: 0.5%;
+	width: 96%;
+	margin: 0 2%;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	margin-bottom: 0;
+	width: 100%;
+	padding: 0 .2em;
+	font-size: 1em;
+	/* text-align: center; */
+}
+
+.third, .half, .whole {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+.third {
+	float: left;
+	margin: 0 auto;
+	padding: 0 15%;
+}
+
+.sixth {
+	width: 50%;
+	float: left;
+}
+
+.facts {
+	padding-top: 4%;
+}
+
+.section-1 {
+
+}
+
+.love-do {
+	font-family: 'Raleway', sans-serif;
+	word-spacing: .2em;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+
+}
+.upper-strong, .huge-strong, .upper {
+	text-transform: uppercase;
+}
+
+.upper-strong {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.humanity-upper {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.butterflies {
+	font-family: 'Indie Flower', cursive;
+	/* float: right; */
+	padding-bottom: 1em;
+}
+
+.happiness {
+	font-family: 'Lobster Two', cursive;
+}
+
+.huge-strong {
+	font-family: 'Oswald', sans-serif;
+	font-size: 5em;
+	font-weight: bolder;
+	text-align: left;
+}
+
+.section-2, .section-3, .section-4, .section-5, .section-6, .section-7 {
+	clear: both;
+}
+
+.section-2 {
+
+}
+
+.doing-it {
+
+}
+
+.whatever {
+
+
+}
+
+.section-3 {
+	clear: both;
+
+}
+
+.life-stress {
+
+}
+
+.life-stress .third {
+	width: 50%;
+	float: left;
+}
+
+.life .sixth {
+	width: 50%;
+	text-align: left;
+	float: left;
+}
+
+.life {
+	font-family: 'Teko', sans-serif;
+
+	font-size: 7em;
+	width: 45%;
+	padding-right: 1%;
+	line-height: 1em;
+	letter-spacing: -0.02em;
+	padding-top: 0;
+	display: inline;
+	text-align: center;
+}
+
+.stress {
+
+	font-family: 'Oswald', sans-serif;
+	width: 48%;
+	margin-top: -2%;
+	padding: 0 1%;
+	font-size: 0.8em;
+	display: inline;
+	margin-left: 2%;
+	line-height: 1.25em;
+	text-align: left;
+}
+
+.humanity {
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	float: none;
+	margin-bottom: 4%;
+	background-color: #e6e6e6;
+	color: navy;
+	border: 2px solid gray;
+	padding: 1em 0;
+	line-height: 1.5em;
+}
+
+.listen {
+	text-align: left;
+
+
+}
+
+.listen-larger {
+	font-size: 1.25em;
+	float: left;
+	width: 48%;
+	line-height: 1.25em;
+	padding-right: 2%;
+	text-align: right;
+}
+
+.listen-text {
+	float: left;
+	width: 50%;
+	line-height: 1.187em;
+}
+
+.section-4 {
+	clear: both;
+	padding: 1em 0;
+
+}
+
+.facts {
+	font-weight: bold;
+/*	clear: both; */
+	padding-top: 4%;
+	padding-right: 0;
+}
+
+.could-do {
+
+}
+
+.section-6 {
+
+}
+
+.wilderness {
+	font-family: 'Teko', sans-serif;
+}
+
+.section-7 {
+
+}
+
+.creative {
+	font-family: 'Lobster Two', cursive;
+
+}
+
+.castles {
+
+}
+
+footer p {
+	font-size: .75em;
+	margin: 5%;
+}
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media screen and (min-width:768px) {
+
+	body {
+		font-size: 1.5em;
+	}
+
+	.sixth, .third, .half {
+		float: left;
+	}
+	.sixth {
+		width: 45%;
+		margin: auto;
+	}
+	.third {
+		float: none;
+	}
+	.half{
+		width: 47%;
+	}
+	.whole {
+		width: 98%
+	}
+	.stress {
+/*		float: right;  */
+		float: left;
+		line-height: 1.5em;
+	}
+
+	.listen-larger{
+		width: 45%;
+		padding-right: 2%;
+		text-align: right;
+	}
+	.listen-text {
+		width: 37%;
+		line-height: 1.125em;
+	}
+	.stress p{
+		float: left;
+		text-align: left;
+		/* width: 45%; */
+		padding-left: 1%;
+	}
+	.life {
+		text-align: right;
+	}
+	.life p {
+		width: 45%;
+	}
+	.facts {
+		padding-top: 0;
+	}
+
+	footer p {
+		margin: 5% 0;
+	}
+}
+
+/* ----------- Lapttops larger than 940px wide ----------- */
+
+@media screen and (min-width:940px) {
+
+	body {
+		font-size: 1em;
+		max-width: 940px;
+	}
+
+	.sixth {
+		width: 48%
+		float: left;
+	}
+
+	.third {
+		width: 33%;
+		margin: 0;
+		float: left;
+		padding: 0;
+
+	}
+
+	.half {
+		width: 48%;
+		float: left;
+		margin: 0;
+	}
+
+	.whole {
+		width: 99%;
+	}
+
+	.humanity {
+		clear: none;
+		float: left;
+		padding: 1% 0;
+	}
+
+	.facts {
+		padding-top: 0;
+	}
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media screen and (min-width:1200px) {
+
+}
+/* ----------- Monitors larger than 1600px wide ----------- */
+@media  screen and (min-width:1600px) {
+
+}

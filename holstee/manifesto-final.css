@@ -1,0 +1,214 @@
+p {
+		font-family: "Roboto Slab";
+		text-transform: uppercase;
+    	text-align: justify;
+		margin: 0 5px 0 5px;
+		line-height: 1.025em;
+}
+
+.main {
+    width: 480px;
+	border: 2px solid gray;
+	margin: 100px;
+}
+
+
+/* --------------------
+   ----- Left and right columns and floats
+   -------------------- */
+
+.left, .left-float {
+	width: 240px;
+}
+
+.left-float {
+	float: left;
+}
+
+.right-float {
+	width: 215px;
+	float: right;
+}
+
+/* --------------------
+   ----- Clear both floats
+   -------------------- */
+
+.clear-it {
+	clear: both;
+}
+
+/* --------------------
+   ----- Line spacing and height issues
+   -------------------- */
+   
+.line-height-normal, .head-03, .head-07, .head-09-5, .text-02-2, .text-02-3, .text-04-3, .text-06, .head-05-2 {
+	line-height: 1.025em;
+}   
+
+/*--------------------
+  ----- Font sizes and details
+  ----- Some of these classes only contain a single rule, but I'm
+  ----- trying to move all CSS into this file.  Note that the
+  ----- distinction between headers (h01) and text (t01) is
+  ----- arbitrary and based on font size.
+  -------------------- */
+
+.head-01 {
+	float: right;
+	font-size: 100px;
+	font-weight: bold;
+	line-height: 0;
+	margin: 4px 0px 3px 5px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	vertical-align: text-top;
+}
+
+.head-02 {
+	font-size: 56px;
+	width: 220px; 
+	float: left; 
+	line-height: .81em; 
+	letter-spacing: 0.08em;
+}
+
+.head-03 {
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 0.05em;"
+}
+
+.head-04 {
+	width: 240px;
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 0;
+	vertical-align: text-top;
+}
+
+.travel-often, .head-05-2 {
+	font-size: 30px;
+}
+
+.travel-often {
+	/* font-size: 30px; */
+	font-weight: bold;
+	word-spacing: -.1em;
+}
+
+.head-05-2 {
+	/* font-size: 30px; */
+	word-spacing: .1em; 
+	letter-spacing: 0.01em;
+}
+
+.head-06, .head-06-1 {
+	font-size: 28px;
+}
+
+.head-06 {
+	line-height: 1.025em; 
+	word-spacing: .125em; 
+	letter-spacing: 0.008em;
+}
+
+.head-06-1 {
+	letter-spacing: 0.06em;
+}
+
+.head-07 {
+	font-size: 27px;
+	font-weight: bold;
+	word-spacing: 0.025em;
+}
+
+.head-08, .head-08-5 {
+	font-size: 26px;
+	line-height: 1.025em;
+}
+
+.head-08-5 {
+	font-weight: bold; 
+	line-height: .5em; 
+	word-spacing: .0125em;
+}
+
+.head-09, .head-09-5 {
+	font-size: 24px;
+}
+
+.text-01, .text-01-5 {
+	font-size: 22px;
+}
+
+.text-01 {
+	/* font-size: 22px; */
+	line-height: .8em; 
+	word-spacing: -.09em;
+}
+
+.text-01-5 {
+	 word-spacing: .3em; 
+	 letter-spacing: 0.008em; 
+	 line-height: 1em;"
+}
+.text-02, .text-02-2, .text-02-3 {
+	font-size: 20px;
+}
+
+.text-02-2 {
+	word-spacing: .125em; 
+	padding-top: 5px; 
+	line-height: 1.5em;
+}
+
+
+
+.text-03, .text-03-5 {
+	font-size: 19px;
+}
+
+.text-03-5 {
+	word-spacing: .125 em; 
+	letter-spacing: 0.07em;
+}
+
+.text-04, .text-04-1, .text-04-2 {
+	font-size: 16px;
+}
+
+.text-04-1, .text-05 {
+	 letter-spacing: 0.05em;
+}
+
+.text-04-2, .text-04-3, .text-05, .and-people {
+	 word-spacing: .2em;
+}
+
+.text-04-3 {
+	 letter-spacing: 0.02em; 
+	 padding-top: 2px;
+}
+.text-05 {
+	font-size: 14px;
+	line-height: .1em;
+}
+
+.text-06 {
+	font-size: 12px;
+	
+}
+
+
+/********************* SPAN STYLES ********************/
+
+.if-looking {
+	word-spacing: .125em;
+}
+
+.and-share {
+	word-spacing: .5em; 
+	letter-spacing: 0.04em;
+}
+

@@ -1,0 +1,138 @@
+<!--  vickigreer.com landing page  -->
+<!-- Last modified 1-26-17             -->
+
+<!doctype html>
+<html lang="en">
+    <head >
+        <meta charset="utf-8">
+        <title>Vicki Greer | Developer</title>
+        <!--
+                The following link causes an error in the w3schools HTML validator.
+                However, it was copied directly from the Google Fonts page, so I'm
+                leaving it.
+        -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lora: 400, 700|Source+Sans+Pro: 400, 700" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+    </head>
+    <!--
+            This is a one-page website for a developer.  It includes a header section,
+            an about section, a work section, a contact section, and a footer.
+    -->
+    <body>
+        <!--
+                Header section contains name and navbar.  All navbar links currently
+                go to a location in this single-page webpage.
+        -->
+        <div class="main-container">
+            <header>
+                <div class="full-width">
+                    <div class="half-width">
+                        <h1>Vicki Greer</h1>
+                    </div>
+                    <div class="half-width">
+                        <nav>
+                            <ul>
+                                <li><a href="resume/index.htm">RESUM&Eacute;</a></li>
+                                <li><a href="portfolio/index.html">Portfolio</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#work">Work</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <h2><span> Hi,</span> I'm a developer who loves clean & elegant code.</h2>
+                </div>
+            </header>
+
+            <!-- The main section acts as a container for everything except the header.
+            -->
+            <main>
+
+                <!-- The about section contains some information about the developer.
+                -->
+                <section id="about">
+                    <div class="full-width">
+                        <h2>A little bit about me</h2>
+                        <div class="half-width">
+                            <p>I've been working in the tech world my entire career.  Recently, I decided
+                                    I want a new direction in my job, and I've been concentrating on
+                                    frontend web development work.  I'm having fun building my own
+                                    websites, and making them look exactly the way I want them.
+                            </p>
+                        </div>
+                        <div class="half-width">
+                            <p>I enjoy taking complex problems or designs and turning them into
+                                    clean, elegant solutions.  When I'm not in front of the computer,
+                                    you can find me reading funny and snarky science fiction and
+                                    fantasy, working logic puzzles or playing Sudoku.  I am also a
+                                    devoted slave to my cat.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--
+                        The work section conatins information about the type of work this developer does.
+                -->
+                <section id="work">
+                    <div class="full-width">
+                        <div class="third-width">
+                            <!-- HTML Skills -->
+                            <img src="img/html-icon.png" alt="HTML icon" />
+                            <h3>Hand-Coded HTML</h3>
+                            <p>My focus is writing clean, well formatted, semantic HTML5 by hand to make sure that
+                                the content is easy to read, easy to collaborate, trouble-shoot and accessible.
+                            </p>
+                        </div>
+                        <div class="third-width">
+                            <!-- CSS Skills -->
+                            <img id="icon-css" src="img/css-icon.png" alt="CSS Icon" />
+                            <h3 id="p-css" >Well-Organized CSS</h3>
+                            <p>I pride myself on writing CSS that is easy to read and build on.  I focus on keeping
+                                my CSS lean and fast to load, and I make it a habit to stay up to date on current
+                                best practices.
+                            </p>
+                        </div>
+                        <!-- Conversion from PSD to code -->
+                        <div class="third-width">
+                            <img id="icon-pencil" src="img/pencil-icon.png" alt="Pencil Icon" />
+                            <h3 id="p-ease">Ease Converting PSD into HTML</h3>
+                            <p>You can trust me to take a designer's PSD and quickly & accurately convert
+                                it into a webpage that is pixel-perfect match.
+                            </p>
+                        </div>
+                    </div>  <!-- class=full-width -->
+                </section>
+
+                <!-- The contact section contains information on how to contact the developer
+                        through e-mail, twitter, tumbler, instagram, LinkedIn and GitHub
+                -->
+                <footer id="contact">
+                    <div class="full-width">
+                        <div class="half-width">
+                            <img id="contact-img" src="img/contact-image.png" alt="Contact Image" />
+                        </div>
+                        <div>
+                            <div class="half-width" id="contact-info">
+                                <h2>Like what you see?</h2>
+                                <h3 id="email-header">Let's meet for a cup of coffee.</h3>
+                                <a  id="envelope" href="mailto:Vicki.L.Greer@gmail.com"><img src="img/envelope.png" alt="envelope icon" /><span class="email-margin">Vicki.L.Greer@gmail.com</span></a>
+                                <h3 id="socialmedia-header">Or, find me on the interwebs</h3>
+                                <ul>
+                                    <li><a  href="http://www.twitter.com/vickig_vt" target="_blank"><img  src="img/twitter.png" alt="Twitter" /></a></li>
+                                    <li><a href="http://www.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr" /></a></li>
+                                    <li><a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a></li>
+                                    <li><a href="http://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" /></a></li>
+                                    <li><a href="http://www.github.com/vtbookworm" target="_blank"><img src="img/github.png" alt="GitHub" style="padding-right: 0; margin-left: 0;"/></a></li>
+                                </ul>
+                            </div>  <!-- class=half-width -->
+                        </div>
+                    </div>  <!-- class=full-width -->
+                </footer>
+            </main>
+        </div> <!-- main-container -->
+
+    </body>
+</html>

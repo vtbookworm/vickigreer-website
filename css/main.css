@@ -1,0 +1,252 @@
+/************** vickigreer.com Landing Page *********/
+/*  Last modified: 1-26-2017                                */
+/********************* BASE STYLES ********************/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-container {
+    font-size: 16px;
+}
+
+#about, #work, #contact {
+    height: 600px;
+}
+
+
+/******************** GRID STYLES ********************/
+
+.full-width {
+    width: 96%;
+    padding: 0 2%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 46%;
+    padding: 0 3% 0 0;
+    float: left;
+}
+
+.half-wdith p, third-width p {
+    font-size: 1.25em;
+}
+
+.third-width {
+    width: 32%;
+    padding: 0;
+    float: left;
+}
+
+
+/******************** HEADER SECTION ********************/
+
+header {
+	height: 800px;
+    background: #f2f2f2 url('../img/hero.png');
+    background-size: cover;
+	background-position: center;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 1.875em;
+    font-weight: 700;
+    color: #bbc085;
+    padding: 50px 0;
+}
+
+nav {
+    float: right;
+    padding: 66px 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #828282;
+    font-size: 1.125em;
+    padding-right: 20px;
+}
+
+header h2 {
+	width: 83%;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 4.5em;
+    color: #9a9b9b;
+    padding: 60px 0 0 0;
+}
+
+header h2 span {
+    color: #262a2b;
+}
+
+
+/******************** ABOUT SECTION ********************/
+#about {
+    height: 650px;
+}
+
+#about .full-width {
+/*     padding: .067% 0; */
+padding: 50px 0;
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.25em;
+}
+
+#about p {
+    font-size: 1.5em;
+    color: #7f7f7f;
+    padding-right: 1%;
+    padding-bottom: 50px;
+	line-height: 2.5em;
+    font-family: 'Lora', serif;
+}
+
+
+/******************** WORK SECTION ********************/
+
+#work {
+    text-align: center;
+    background-color: #f9ceb7;
+    padding-top: 100px;
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#icon-css {
+	padding-top: 10px;
+}
+
+#icon-pencil {
+	padding-top: 10px;
+}
+
+#p-css {
+	padding-top: 5px;
+}
+
+#p-ease {
+	padding-top: 10px;
+}
+
+#work h3 {
+	font-size: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    line-height: 1.875;
+	padding: 0 35px;
+}
+
+
+/******************** CONTACT SECTION ********************/
+
+#contact {
+    background-color: #ebebeb;
+}
+
+#contact .full-width {
+    padding: 110px 0;
+}
+
+#contact-img {
+    border: 12px solid #ffffff;
+}
+
+#contact h2, #email-header, #socialmedia-header {
+    padding-left: 115px;
+}
+
+#envelope {
+    padding: 0 10px  0 115px;
+    color: #c49075;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.25em;
+}
+
+#email-header{
+	font-size: 2em;
+    font-weight: 400;
+    margin: -30px 0 5px 0;
+}
+
+#socialmedia-header {
+    font-weight: bold;
+    font-size: 1.75em;
+    margin: 40px 0 0 0;
+}
+
+
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size:  1.75em;
+}
+
+.email-margin {
+    margin-left: 15px;
+	font-weight: 700;
+}
+
+#contact ul {
+    list-style: none;
+	padding-left: 115px;
+}
+
+#contact ul li {
+    display: inline-block;
+}
+
+#contact ul img {
+	height: 30px;
+	padding-right: 50px;
+	font-size: 2em;
+}
+
+
+.img-center {
+	padding-left: 0px;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

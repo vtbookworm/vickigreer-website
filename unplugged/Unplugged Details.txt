@@ -1,0 +1,85 @@
+Logo Top
+	Source Sans Pro Bold 16px line-height 16px
+	color="#ffffff"
+	background-color: #222222
+	size: 320px x 85px;
+
+Nav section:
+	General:
+		SansitaOne; text-transform: uppercase;
+		color: color="#222222"
+		background-color: "#dddddd"
+		size: 320px X 61px
+		border bottom between each selection: 2px cfcacb
+
+	Concerts
+		icon - musical notes
+	Reviews
+		icon - headphones
+	About Us
+		icon - people
+	FAQ
+		icon: question mark
+
+article/section: top-story  article: 300px tall x 300px wide
+
+	Margin around picture
+		Color: color="#eeeeee"
+		8px wide X 15px tall
+
+	Picture
+		300 X 200px
+	Headline: Wilco Announces a New Album and Summer tour Source Sans Pro Bold 21px line height 22px
+	content: lorem ipsum Source Sans Pro Regular, 14px, line-height 20px
+
+
+Newsletter Signup - probably floated to side for larger screens - Source Sans Pro bold 16px line-height 16px
+	line above, below signup area: color: cccccc
+	width: 2px
+	length: 300px
+
+	HTML form w/input field and sign up button
+	
+	Title: Newsletter Signup, Source Sans Pro, 16px, 16px, #000000
+	
+	Input field background color: ffffff, source sans pro, 16px, 16px, #000000, border 2px color: e6e6e6, size 300px x 40px
+	
+	margin between input field and button: 6px high
+
+	button background: ff1256
+		button text: SIGN UP, Source Sans Pro bold, uppercase, 18px, 24px color #ffffff
+		text-transform: uppercase
+		color: ffffff
+		size: 300px x 45px
+		shadow around signup button looks to be about 2px offset to lower left, color d19aaa
+		margin below button: 20px
+		background pattern overlaid on button and shadow
+	
+
+Section - recent news & Reviews - Source Sans Pro, 16px, 16px - don't know if this will be floated to side
+
+Article:
+	Headline: News (or Review): Open Sans, 10px, 16px, bold, uppercase, vertical distance from Recent News and Reviews is 			16px, color 000000
+
+	Figure: border 2px cfcacb, dimensions 130x85px,
+
+	Headline floated left, Source Sans Pro Bold, 16px, 16px
+
+	line below picture is 2 px cccccc, 24px below it.
+
+
+/Article
+
+/section
+
+Repeat article for a total of 6
+
+Either line below last article or line above footer: 2 px cccccc, 24px below picture, 16px above start of Unplugged logo
+
+Footer
+	Unplugged logo, Source Sans Pro (but I don't believe it), area is 150 x 50px, text color:ffffff, background color:222222, centered
+
+Logo may be an image, but if so, I'm not sure how to get the background color around it.  Maybe another use of transparent text?
+
+Border around feed images in mobile: #cfcacb, cfcacb, bbb3b3, cfcacb
+

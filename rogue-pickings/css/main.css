@@ -1,0 +1,396 @@
+/* ===== vickigreer/rogue-pickings CSS file ===== */
+/* Last modified on 1-26-2017                     ===== */
+
+/*
+ *  FONTS
+ */
+@font-face {
+    font-family: 'wisdom_scriptregular';
+    src: url('wisdom_script_aj-webfont.woff2') format('woff2'),
+         url('wisdom_script_aj-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	font-size: 16px;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+	max-width: 768px;
+	margin: 0 .94em;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+h1, h3, h4 {
+	color: black;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 1.875em;
+	text-align: center;
+	width: auto;
+	padding: .94em 0;
+	border-bottom: 3px solid #77a466;;
+}
+
+h1 span {
+	color: #77a466;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #77a466;
+	padding: .94em 0;
+	text-align: center;
+}
+
+
+
+nav a:hover {
+	color: black;
+	background-color: #77a466;
+}
+
+.top-section {
+	height: auto;
+	margin: 0 auto;
+}
+
+.top-section h3 {
+	font-size: 1.125em;
+	color: black;
+	text-align: left;
+	padding: .94em 0;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h3 {
+	color: #77a466;
+	font-size: 1.125em;
+	text-align: left;
+	border-bottom: none;
+}
+
+.main-image {
+	width: 100%;
+	height: auto;
+	padding-top: .75em;
+}
+
+.main-image img {
+	width: 100%;
+	height: auto;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+p {
+	padding: 0;
+	line-height: 1.31em;
+	font-size: .875em;
+	color: #333;
+}
+.section-one h4,
+.section-two h4,
+.section-three h4 {
+	font-size: .875em;
+}
+.menu {
+	list-style: none;
+	color: #77a466;
+	padding: 0;
+}
+
+.menu li {
+	padding: .5em 0;
+}
+
+footer {
+	font-size: .875em;
+	border-top: 1px solid #eee;
+}
+
+footer h4 {
+	font-size: 1em;
+	text-align: center;
+}
+
+footer h4 span {
+	color: #77a466;
+	text-transform: lowercase;
+	font-family: 'wisdom_scriptregular', cursive;
+	font-size: 1.125em;
+}
+
+
+
+/* --------------------------------------------
+	Tablets
+	-------------------------------------------- */
+@media screen and (min-width:768px)
+{
+	body {
+		max-width:1199px;
+		margin: auto 2em;
+	}
+
+	h1 {
+		text-align: left;
+		float: left;
+		padding: .94em 0;
+		border-bottom: none;
+	}
+
+	header nav {
+		float: right;
+		padding-top: 3em;
+	}
+
+	header nav a {
+		font-size: .75em;
+		display: inline;
+		margin: 0 .5em;
+		font-weight: bold;
+	}
+
+	.border {
+		border-top: 1px solid #eee;
+	}
+
+	.border-section-three {
+		/* width: 94%;*/
+		width: 100%;
+		clear: both;
+		border-top: 1px solid #eee;
+	}
+
+	.section-one,
+	.section-two {
+		width: 45%;
+		float: left;
+	}
+
+	.section-one {
+		border-right: 1px solid #eee;
+	}
+
+	.section-two {
+		margin-left: 1em;
+	}
+
+	.section-three {
+		clear: both;
+		width: 45%;
+		padding: 0 27%;
+		margin-left: 15%;
+	}
+
+}
+
+/* --------------------------------------------
+	Tablets in landscape view
+	-------------------------------------------- */
+@media screen and (min-width:780px) {
+	header nav a {
+		margin: .5em;
+	}
+}
+
+/* --------------------------------------------
+	Desktops
+	-------------------------------------------- */
+@media screen and (min-width:1200px) {
+
+	body {
+		max-width: 1200px;
+	}
+
+	h1 {
+		text-align: left;
+		float: left;
+		padding: .94em 0;
+	}
+
+	h3 {
+		font-size: 1.125em;
+		text-align: center;
+		padding: .94em;
+	}
+
+	h4 {
+		font-size: .75em;
+	}
+
+	header {
+		border-bottom: none;
+	}
+
+	header h1 {
+		border-bottom: none;
+	}
+
+	header nav a {
+		padding: 1em;
+	}
+
+	.main-title h3 {
+		text-align: left;
+		padding: .31em 0;
+		text-transform: uppercase;
+		color: #77a466;
+	}
+
+	p {
+		padding: 0px 1.875em;
+	}
+
+	/*The widths are in a percentage!*/
+	header {
+		width: 100%;
+		height: 6.875em;
+		margin: 0 auto;
+	}
+
+	header nav a {
+		font-weight: bold;
+		/* padding: 0 .625em; */
+	}
+
+	/*The widths are in a percentage!*/
+	.top-section,
+	.bottom-section {
+		width: 100%;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	.main-image {
+		float: left;
+	}
+
+	.main-image img {
+		width: 100%;
+		border-bottom: 3px solid #77a466;
+	}
+
+	.main-title {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+
+	.main-title p {
+		padding: 0px;
+		line-height: 1.56em;
+		font-size: 1em;
+	}
+
+	.border {
+		border-top: 1px solid #eee;
+	}
+
+	.border-section-three {
+		clear: none;
+		border-top: none;
+		width: 32%;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 32%;
+		height: auto;
+		float: left;
+		border-top: none;
+		border-right: none;
+		padding: 0;
+	}
+	.section-three {
+		margin: 0;
+		clear: none;
+	}
+	.section-one,
+	.section-two {
+		border-right: 1px solid #eee;
+	}
+
+	.section-one h4 {
+		padding: .625em 0;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: .625em 1.875em;
+	}
+
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+
+	.menu li {
+		padding: .625em 0;
+		color:#77a466;
+	}
+
+	.reviews {
+		line-height: 1.31em;
+		font-size: 1em;
+	}
+
+	.address {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	/*The widths are in a percentage!*/
+	footer {
+		width: 100%;
+		height: 3.125em;
+		margin: 0 auto;
+		clear: both;
+		text-align: center;
+	}
+
+	footer span {
+		font-family: 'wisdom_scriptregular', cursive;
+		text-transform: lowercase;
+		color: #77a466;
+		font-size: .875em;
+	}
+
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		max-width: 1440px;
+	}
+}
