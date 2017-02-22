@@ -1,4 +1,5 @@
 var currentPic = "";
+var currentMsg = "";
 var earlyMorning = 8;
 var morning=11;
 var afternoon=17;
@@ -8,10 +9,14 @@ var napTime = 14;
 var lunchTime = 12;
 var wakeupTime = 7;
 var noon = 12;
+var isPartyTime = false;
+var oneSecond = 1000;
 var dateTime = new Date();
 var currentTime = dateTime.getHours();
 var timeEventJS = document.getElementById("timeEvent");
 var picEventJS = document.getElementById("lolcat");
+var partyTimeBtn = document.getElementById("partyTimeButton");
+
 //TESTING ONLY
 //currentTime = prompt("Enter the hour to test in military time", "");
 
@@ -103,7 +108,21 @@ var updateClock = function() {
   showCurrentTime();
 };
 
-var oneSecond = 1000;
+var setPartyTime = function () {
+	if (isPartyTime == false) {
+		isPartyTime = true;
+		currentTime = partyTime;
+		partyTimeBtn.style.backgroundColor = "blue";
+	}
+	else {
+		isPartyTime = false;
+		currentTime = dateTime.getHours();
+		partyTimeBtn.style.backgroundColor = "black";
+	}
+	
+}
+
+partyTimeBtn.addEventListener("click", setPartyTime);
 updateClock();
 setInterval(updateClock, oneSecond);
 
