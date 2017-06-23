@@ -162,6 +162,7 @@ p {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.5em;
+	margin-top: 0;
 }
 
 h1, h2, h3 h4 {
@@ -191,7 +192,7 @@ h4 {
 }
 
 .sidebar input {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #acacac;
     width: 100%;
     padding-bottom: 1%;
 }
@@ -262,6 +263,7 @@ header {
 
 #logo {
     width: 90%;
+	max-width: 400px;
     margin: 0 auto;
     background-color: black;
     padding: 5%;
@@ -362,15 +364,20 @@ h3 {
 .sidebar, .side-bar-detail {
     width: 100%;
     padding-bottom: 8%;
-    border-bottom: 1px solid #cccccc;
 }
 
 .sidebar-detail {
     padding-bottom: 8%;
 }
 
+.newsletter, .sidebar-upcoming, .sidebar-faq {
+	width: 100%;
+	padding-bottom: 4%;
+	border-bottom: 1px solid #ccc;
+}
+
 .newsletter {
-    width: 100%;
+  
 }
 
 .email {
@@ -387,8 +394,7 @@ h3 {
 }
 
 .sidebar-upcoming, .sidebar-faq {
-    width: 100%;
-    display: none;;
+    display: none;
 }
 
 .sidebar-upcoming {
@@ -429,7 +435,7 @@ h3 {
 .feed-img {
     width: 37%;
     float: left;
-    margin: 1% 0;
+    margin: 1% 0 5% 0;
 }
 
 .feed-img img {
@@ -437,7 +443,7 @@ h3 {
 }
 
 .feed-info {
-    width: 60%;;
+    width: 60%;
     float: left;
     padding-left: 2%;
     margin-top: 0;
@@ -812,6 +818,7 @@ footer {
 
 #footer-logo {
     width: 47.5%;
+	max-width: 210px;
     margin: 2% auto 0 auto;
     clear: both;
     background-color: black;
@@ -929,9 +936,9 @@ footer {
     }
 
     /* nav ul {
-        margin-left: 20%;
+        margin-left: 5%;
     } */
-
+	
     nav ul li {
         display: inline;
         float: left;
@@ -944,10 +951,8 @@ footer {
     } */
 
     nav ul li a {
-
+		font-size: 1em;
     }
-
-
 
     .hero-area {
         width: 100%;
@@ -961,7 +966,8 @@ footer {
     .top-img {
         width: 57%;
         float: left;
-        hieght: auto;
+        height: auto;
+		padding-top: 1%;
     }
 
     .top-img img {
@@ -985,7 +991,7 @@ footer {
     }
 
     .top-info p {
-        width: 100%;
+        width: 98%;
         float: left;
     }
 
@@ -1095,6 +1101,10 @@ footer {
         float: left;
         border-right: 1px solid #ccc;
     }
+	
+	.feed-item {
+		padding-bottom: 20px;
+	}
 
     .feed-img {
         width: 37%;
@@ -1248,6 +1258,10 @@ footer {
     nav {
         margin-bottom: 2%;
     }
+	
+	nav ul {
+		padding-right: 20%;
+	}
 
     nav ul li {
         margin: 1%;
@@ -1256,6 +1270,10 @@ footer {
     nav ul li:first-child {
         margin-left: 5%;
     }
+	
+	nav ul li a {
+		font-size: 1.125em;
+	}
 
     nav i {
         padding: 0 10px 0 15px;
@@ -1273,6 +1291,7 @@ footer {
 
     .top-img {
         height: auto;
+		padding-top: 4%;
     }
 
     .top-img img {
@@ -1287,7 +1306,12 @@ footer {
         margin: auto 0 0 0;
         border-left: 1px solid #ccc;
         padding: 0 2% 2% 2%;
+		border-bottom: 1px solid #ccc;
     }
+	
+	.sidebar-faq {
+		border-bottom: none;
+	}
 
     .feed {
         clear: all;
