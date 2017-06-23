@@ -915,8 +915,8 @@ footer {
     /*  Tablet Styles  */
 
     .main-header {
-        width: 94%;
-        padding: 0 3%;
+        width: 98%;
+        padding: 0 3% 0 0;
         margin: auto;
     }
 
