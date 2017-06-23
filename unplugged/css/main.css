@@ -165,7 +165,7 @@ p {
 	margin-top: 0;
 }
 
-h1, h2, h3 h4 {
+h1, h2, h3, h4 {
     color: #222;
 }
 
@@ -230,6 +230,10 @@ nav {
     background-color: #ddd;
 }
 
+nav ul {
+	margin-left: 0;
+}
+
 nav ul li {
     text-align: center;
     list-style: none;
@@ -263,7 +267,7 @@ header {
 
 #logo {
     width: 90%;
-	max-width: 400px;
+	max-width: 768px;
     margin: 0 auto;
     background-color: black;
     padding: 5%;
@@ -908,7 +912,7 @@ footer {
    ========================================================================== */
 
 @media screen and (min-width: 768px) {
-    /*  Tablet Stules  */
+    /*  Tablet Styles  */
 
     .main-header {
         width: 94%;
@@ -930,21 +934,56 @@ footer {
         width: 60%;
         float: right;
     }
+	
+	#wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		align-items:center;
+		font-weight: bold;   
+	}
 
     nav i {
         padding: 0 5px 0 15px;
     }
 
-    /* nav ul {
-        margin-left: 5%;
-    } */
+    nav ul {
+        margin-left: 0;
+    }
 	
     nav ul li {
         display: inline;
-        float: left;
+        float: right;
         margin: 0;
         border-bottom: none;
+		font-size: .85em;
     }
+	
+	#nav-concerts {
+		flex: 1;
+		order: 1;
+	}
+	
+	#nav-reviews {
+		flex: 1;
+		order: 2;
+	}
+	
+	#nav-about {
+		flex: 1;
+		order: 3;
+	}
+	
+	#nav-faq {
+		flex: 1;
+		order: 4;
+	}
+	
 
     /* nav ul li:last-child {
         margin-right: 0;
@@ -1000,7 +1039,7 @@ footer {
        ========================================================================== */
     .sidebar {
         width: 37%;
-        margin: auto 10% auto 2%;;
+        margin: auto 10% auto 2%;
         float: right;
         padding: 0;
     }
@@ -1120,18 +1159,18 @@ footer {
     /* ==========================================================================
        About Page
        ========================================================================== */
-       .contact-page h1 {
-           font-size: 2em;
-       }
+   .contact-page h1 {
+	   font-size: 2em;
+	}
 
-       .contact-page p {
-           font-size: 1.25em;
-       }
+   .contact-page p {
+	   font-size: 1.25em;
+	}
 
-      .contact {
-        width: 37%;
-        float: left;
-        padding: 0 0 2% 0;
+	.contact {
+		width: 37%;
+		float: left;
+		padding: 0 0 2% 0;
     }
     .contact p {
         line-height: 1.5em;
@@ -1222,15 +1261,15 @@ footer {
     /* ======================
        footer
        ======================= */
-       footer {
-           width: 100%;
-           clear: both;
-       }
+	footer {
+	   width: 100%;
+	   clear: both;
+	}
 
-       #footer-logo {
-           width: 30%;
-           margin: auto;
-       }
+	#footer-logo {
+	   width: 30%;
+	   margin: auto;
+	}
 
 }
 
@@ -1259,12 +1298,9 @@ footer {
         margin-bottom: 2%;
     }
 	
-	nav ul {
-		padding-right: 20%;
-	}
-
-    nav ul li {
+	nav ul li {
         margin: 1%;
+		font-size: 1em;
     }
 
     nav ul li:first-child {
@@ -1272,7 +1308,7 @@ footer {
     }
 	
 	nav ul li a {
-		font-size: 1.125em;
+		font-size: 1em;
 	}
 
     nav i {
@@ -1464,6 +1500,22 @@ footer {
                  width: 100%;
              }
 
+}
+
+@media screen and (min-width: 1250px) {
+    /* Wide-screen Desktop Styles */
+
+   /* ==============================
+      nav
+      ============================== */
+
+    nav ul li {
+/*        margin: 1%; */
+    }
+	
+	nav ul li a {
+		font-size: 1.125em;
+	}
 }
 
 @media print,
