@@ -191,7 +191,7 @@ h4 {
 
 }
 
-.sidebar input {
+.sidebar input, .email{
     border: 1px solid #acacac;
     width: 99%;
     padding-bottom: 1%;
@@ -385,7 +385,7 @@ h3 {
 }
 
 .email {
-    width: 100%;
+    width: 99%;
     box-sizing: border-box;
 }
 
@@ -1115,6 +1115,7 @@ footer {
         padding: 2% 0;
         box-sizing: border-box;
         margin-left: 2%;
+		margin-top: 0;
         line-height: .875em;
     }
 
