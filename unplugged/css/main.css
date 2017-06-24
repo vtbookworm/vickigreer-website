@@ -193,7 +193,7 @@ h4 {
 
 .sidebar input {
     border: 1px solid #acacac;
-    width: 100%;
+    width: 99%;
     padding-bottom: 1%;
 }
 
@@ -485,6 +485,10 @@ h3 {
 .reviews-img, .news-img {
     width: 100%;
     margin: 2% auto;
+}
+
+.reviews-img img, .news-img img {
+	border: 1px solid #cfcacb;
 }
 
 .article-header {
@@ -915,8 +919,8 @@ footer {
     /*  Tablet Styles  */
 
     .main-header {
-        width: 98%;
-        padding: 0 3% 0 0;
+        width: 100%;
+        padding: 0;
         margin: auto;
     }
 
@@ -1365,6 +1369,10 @@ footer {
     .top-img img {
         max-width: 620px;
     }
+	
+	.top-info {
+		padding-left: 0;
+	}
 
     .top-info header h1 {
         font-size: 2.5em;
@@ -1374,7 +1382,7 @@ footer {
         margin: auto 0 0 0;
         border-left: 1px solid #ccc;
         padding: 0 2% 2% 2%;
-		border-bottom: 1px solid #ccc;
+		/* border-bottom: 1px solid #ccc; */
     }
 	
 	.sidebar-faq {
