@@ -195,7 +195,7 @@ h4 {
     border: 1px solid #acacac;
     width: 99%;
     padding-bottom: 1%;
-	/* NEW */line-height: 2em;
+	line-height: 2em;
 }
 
 input[type='text'] {
@@ -1485,7 +1485,7 @@ footer {
     }
 
     .sidebar-detail .email {
-        border: 1px solid #ccc;
+        border: 1px solid #acacac;
     }
 
     /* ==========================================================================
