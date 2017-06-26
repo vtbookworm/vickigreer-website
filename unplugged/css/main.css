@@ -370,9 +370,10 @@ h3 {
 /* ==========================================================================
    Side Bar
    ========================================================================== */
+
 .sidebar, .side-bar-detail {
     width: 100%;
-    padding-bottom: 8%;
+    /* padding-bottom: 8%; */
 }
 
 .sidebar-detail {
@@ -382,7 +383,7 @@ h3 {
 .newsletter, .sidebar-upcoming, .sidebar-faq {
 	width: 100%;
 	padding-bottom: 4%;
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 }
 
 .newsletter {
@@ -402,6 +403,7 @@ h3 {
 
 }
 
+#sidebar-border-upcoming, #sidebar-border-faq,
 .sidebar-upcoming, .sidebar-faq {
     display: none;
 }
@@ -588,6 +590,7 @@ h3 {
     margin: 0 0 .3em 0;
 }
 
+/* contains the map */
 .contact-sidebar {
     clear: both;
     width: 94%;
@@ -1040,7 +1043,7 @@ footer {
     }
 
     .top-story {
-        width:90%;
+        width: 100%;
         float: left;
     }
 
@@ -1081,7 +1084,7 @@ footer {
        ========================================================================== */
     .sidebar {
         width: 37%;
-        margin: auto 10% auto 2%;
+        /* margin: auto 10% auto 2%; */
         float: right;
         padding: 0;
     }
@@ -1089,11 +1092,19 @@ footer {
     .sidebar i {
         padding: 0 15px;
     }
-
+	/* Added .newsletter */
+	.newsletter,
     .sidebar-upcoming, .sidebar-faq {
-        width: 100%;
+        width: 97%;
+		margin-left: 3%;
         display: block;
     }
+	
+	#sidebar-border-upcoming,
+	#sidebar-border-faq	{
+		display: block;
+	}
+	
     .email {
         width: 90%;
     }
@@ -1111,7 +1122,8 @@ footer {
     }
 
     .btn {
-        width: 100%;
+        /* width: 100%; */
+		width: 97%;
     }
 
     .sidebar-detail  .btn-email {
@@ -1179,7 +1191,8 @@ footer {
        Feed Area
        ========================================================================== */
     .feed {
-        width: 50%;
+        /* width: 50%; */
+		width: 62.75%;
         float: left;
         border-right: 1px solid #ccc;
     }
@@ -1360,7 +1373,7 @@ footer {
 
     .top-story {
         clear: both;
-        width: 57%;
+        width: 60%;
         border-bottom: none;
     }
 
@@ -1388,12 +1401,26 @@ footer {
     .sidebar {
         margin: auto 0 0 0;
         border-left: 1px solid #ccc;
-        padding: 0 2% 2% 2%;
+        /* padding: 0 2% 2% 2%; */
+		/* fix for sidebar left border */
+		min-height: 695px;
+		/* put border on top of feed area instead of here */
 		/* border-bottom: 1px solid #ccc; */
     }
 	
+	.newsletter,
+	.sidebar-faq,
+	.sidebar-upcoming {
+		padding: 0 2% 2% 2%;
+	}
+	
 	.sidebar-faq {
 		border-bottom: none;
+		padding-bottom: 10%;
+	}
+	
+	#sidebar-border-faq {
+		display: none;
 	}
 
     .feed {
