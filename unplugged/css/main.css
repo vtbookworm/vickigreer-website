@@ -758,7 +758,11 @@ h3 {
 }
 
 .concert-info:last-child {
-    border: none;
+    /* border: none; */
+}
+
+.second-col .concert-info:last-child {
+	border: none;
 }
 
 .concert-date {
@@ -1312,6 +1316,10 @@ footer {
         width: 45%;
         float: right;
     }
+	
+	.second-col .concert-info:last-child {
+		border: none;
+	}
 
 
     /* ======================
@@ -1430,7 +1438,8 @@ footer {
     }
 
     .feed h2 {
-        padding: 2% 0;
+        /* padding: 2% 0; */
+		padding-top: 2%;
         margin: 0;
         border-top: 1px solid #ccc;
     }
@@ -1548,7 +1557,7 @@ footer {
 		width: 25%;
 		float: left;
 		display: block;
-		margin-left: 2%;
+		/* margin-left: 2%; */
 	}
 
 	.third-col .sidebar {
