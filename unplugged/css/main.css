@@ -191,10 +191,15 @@ h4 {
 
 }
 
-.sidebar input {
+.sidebar input, .email{
     border: 1px solid #acacac;
-    width: 100%;
+    width: 99%;
     padding-bottom: 1%;
+	line-height: 2em;
+}
+
+input[type='text'] {
+	border: 1px solid #acacac;
 }
 
 .btn {
@@ -341,7 +346,7 @@ h3 {
 }
 
 .top-img img {
-
+	border: 1px solid #cfcacb;
 }
 
 .top-info {
@@ -385,7 +390,7 @@ h3 {
 }
 
 .email {
-    width: 100%;
+    width: 99%;
     box-sizing: border-box;
 }
 
@@ -485,6 +490,11 @@ h3 {
 .reviews-img, .news-img {
     width: 100%;
     margin: 2% auto;
+	height: auto;
+}
+
+.reviews-img img, .news-img img {
+	border: 1px solid #cfcacb;
 }
 
 .article-header {
@@ -915,8 +925,8 @@ footer {
     /*  Tablet Styles  */
 
     .main-header {
-        width: 98%;
-        padding: 0 3% 0 0;
+        width: 100%;
+        padding: 0;
         margin: auto;
     }
 
@@ -965,22 +975,54 @@ footer {
     }
 	
 	#nav-concerts {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		-webkit-box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-ms-flex-order: 1;
+		-webkit-order: 1;
 		order: 1;
 	}
 	
 	#nav-reviews {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
 		order: 2;
 	}
 	
 	#nav-about {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
 		order: 3;
 	}
 	
 	#nav-faq {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		-webkit-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-ms-flex-order: 4;
+		-webkit-order: 4;
 		order: 4;
 	}
 	
@@ -1079,6 +1121,7 @@ footer {
         padding: 2% 0;
         box-sizing: border-box;
         margin-left: 2%;
+		margin-top: 0;
         line-height: .875em;
     }
 
@@ -1333,6 +1376,10 @@ footer {
     .top-img img {
         max-width: 620px;
     }
+	
+	.top-info {
+		padding-left: 0;
+	}
 
     .top-info header h1 {
         font-size: 2.5em;
@@ -1342,7 +1389,7 @@ footer {
         margin: auto 0 0 0;
         border-left: 1px solid #ccc;
         padding: 0 2% 2% 2%;
-		border-bottom: 1px solid #ccc;
+		/* border-bottom: 1px solid #ccc; */
     }
 	
 	.sidebar-faq {
@@ -1350,8 +1397,9 @@ footer {
 	}
 
     .feed {
-        clear: all;
+        clear: both;
         width: 100%;
+		border-right: none;
     }
 
     .feed h2 {
@@ -1385,9 +1433,9 @@ footer {
         clear: none;
     }
 
-      /* ==============================
-       Detailled content
-       ============================== */
+	/* ==============================
+	   Detailled content
+	   ============================== */
 
      .news-img, .reviews-img {
          width: 55%;
@@ -1437,7 +1485,7 @@ footer {
     }
 
     .sidebar-detail .email {
-        border: 1px solid #ccc;
+        border: 1px solid #acacac;
     }
 
     /* ==========================================================================
@@ -1448,57 +1496,57 @@ footer {
 
        }
 
-       /* ==========================================================================
-          Upcoming Concerts Page
-          ========================================================================== */
-        .two-thirds-col {
-            width: 66%;
-            border-right: 1px solid #cfcacb;
-            float: left;
-        }
+	/* ==========================================================================
+       Upcoming Concerts Page
+       ========================================================================== */
+	.two-thirds-col {
+		width: 66%;
+		border-right: 1px solid #cfcacb;
+		float: left;
+	}
 
-        .first-col {
-            width:47%;
-            padding-right: 3%;
-            float: left;
-        }
+	.first-col {
+		width:47%;
+		padding-right: 3%;
+		float: left;
+	}
 
-        .second-col {
-            width: 47%;
-            padding-right: 3%;
-            float: left;
-        }
+	.second-col {
+		width: 47%;
+		padding-right: 3%;
+		float: left;
+	}
 
-        .third-col {
-            width: 25%;
-            float: left;
-            display: block;
-            margin-left: 2%;
-        }
+	.third-col {
+		width: 25%;
+		float: left;
+		display: block;
+		margin-left: 2%;
+	}
 
-        .third-col .sidebar {
-            display: block;
-            width: 94%;
-            padding-left: 6%;
-            margin-left: 6%;
-            border: none;
-        }
+	.third-col .sidebar {
+		display: block;
+		width: 94%;
+		padding-left: 6%;
+		margin-left: 6%;
+		border: none;
+	}
 
-        .third-col h2 {
-            margin-bottom: 0;
-        }
+	.third-col h2 {
+		margin-bottom: 0;
+	}
 
-        .concert-date h2 {
-            font-size: 1.25em;
-        }
+	.concert-date h2 {
+		font-size: 1.25em;
+	}
 
 
-          /* ==============================
-             footer
-             ============================== */
-             footer {
-                 width: 100%;
-             }
+	/* ==============================
+       footer
+       ============================== */
+	footer {
+	 width: 100%;
+	}
 
 }
 
