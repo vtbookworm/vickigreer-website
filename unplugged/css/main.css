@@ -724,6 +724,10 @@ h3 {
     text-transform: capitalize;
 }
 
+.faq-question p {
+	font-weight: bold;
+}
+
 .faq-answer {
     font-size: 1em;
 }
