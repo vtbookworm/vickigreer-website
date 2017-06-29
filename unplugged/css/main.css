@@ -1127,6 +1127,10 @@ footer {
         display: block;
     }
 	
+	.sidebar-upcoming .btn, .sidebar-faq .btn {
+		background-color: #b21e49;
+	}
+	
 	#signup {
 		display: block;
 	}
@@ -1140,15 +1144,10 @@ footer {
 		display: block;
 	}
 	
-    .email {
-        width: 90%;
-    }
-
-    .sidebar-detail .email {
+	.sidebar-detail .email {
         width: 70%;
         float: left;
         line-height: 2.5em;
-        height: 2.5em;
     }
 
     .sidebar-detail btn {
