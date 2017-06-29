@@ -191,7 +191,8 @@ h4 {
 
 }
 
-.sidebar input, .email{
+/* .sidebar input, .email{ */
+.email {
     border: 1px solid #acacac;
     width: 99%;
     padding-bottom: 1%;
@@ -203,7 +204,7 @@ input[type='text'] {
 }
 
 .btn {
-    background-color: #b21e49;
+    background-color: #ff1256;
     color: #fff;
     text-transform: uppercase;
     border: none;
@@ -213,7 +214,7 @@ input[type='text'] {
     width: 100%;
     display: block;
     line-height: 2.5em;
-    height: 2.5em;
+    height: 3em;
 }
 
 .btn:hover {
@@ -360,6 +361,7 @@ h3 {
 .top-info header h1 {
     font-size: 1.5em;
     line-height: 1.25em;
+	text-transform: none;
 
 }
 
@@ -386,8 +388,12 @@ h3 {
 	/* border-bottom: 1px solid #ccc; */
 }
 
-.newsletter {
-  
+#signup {
+	display: none;
+}
+
+#find-more {
+	display: block;
 }
 
 .email {
@@ -441,6 +447,11 @@ h3 {
 
 .feed-type {
     width: 100%;
+	margin-bottom: 0;
+}
+
+#first-feed-item {
+	margin-top: 0;
 }
 
 .feed-img {
@@ -461,8 +472,10 @@ h3 {
 }
 
 .feed-info h2 {
-    margin-top: 0;
-/*    color: #222;  */
+	text-transform: none;
+	line-height: 1.125;
+	margin: 0 1em 1em 1em;
+	font-size: 1.25em;
 }
 
 .feed-info h2 a {
@@ -506,7 +519,7 @@ h3 {
 .detail-title h1 {
     font-size: 1.5em;
     line-height: 1.25em;
-
+	text-transform: none;
 }
 
 .article-meta-data ul {
@@ -538,9 +551,10 @@ h3 {
     font-weight: bold;
 }
 
-.detail {
-
+.detail-paragraphs {
+	font-size: .85em;
 }
+
 
 /* ==========================================================================
    About Page
@@ -654,6 +668,7 @@ h3 {
 
 .team-name {
     margin-bottom: 0;
+	margin-top: 0;
 }
 
 .team-title {
@@ -707,7 +722,8 @@ h3 {
 }
 
 .faq-title h1 {
-    margin-bottom: 0;
+    margin-bottom: 3%;
+	font-size: 1.85em;
 }
 
 .detail-faq {
@@ -722,6 +738,7 @@ h3 {
 .faq-question {
     font-size: 1.125em;
     text-transform: capitalize;
+	margin-top: 4%;
 }
 
 .faq-question p {
@@ -809,7 +826,6 @@ h3 {
     line-height: 1.25em;
     margin-bottom: 1%;
     margin-top: 0;
-    padding-top: 2%;
 }
 
 .concert-detail p {
@@ -819,7 +835,10 @@ h3 {
 }
 
 .concert-detail .btn {
-    margin: 2% 0;
+    margin: 3% 0;
+	line-height: 2.5;
+	height: 2.5em;
+	background-color: #b21e49;
 }
 
 .fa {
@@ -1107,6 +1126,14 @@ footer {
 		margin-left: 3%;
         display: block;
     }
+	
+	#signup {
+		display: block;
+	}
+
+	#find-more {
+		display: none;
+	}
 	
 	#sidebar-border-upcoming,
 	#sidebar-border-faq	{
