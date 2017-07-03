@@ -280,6 +280,8 @@ header {
 }
 
 #logo img{
+	width: 75%;
+	padding: 0 12%;
 
 }
 
@@ -307,6 +309,10 @@ nav ul li a {
 
 nav i {
     padding-right: 10px;
+}
+
+#nav-spacer {
+	display: none;
 }
 
 .active-menu {
@@ -955,24 +961,27 @@ footer {
     /*  Tablet Styles  */
 
     .main-header {
-        width: 100%;
-        padding: 0;
+        width: 96%;
+        padding: 0 2%;
         margin: auto;
     }
 
     #logo {
-        width: 35%;
+        width: 30%;
         float: left;
         padding: 2%;
     }
 
     #logo img{
+		width: 100%;
+		padding: 0;
 
     }
 
     nav {
-        width: 60%;
+        width: 65%;
         float: right;
+		margin-bottom: 0;
     }
 	
 	#wrapper {
@@ -994,6 +1003,7 @@ footer {
 
     nav ul {
         margin-left: 0;
+		/* min-height: 75px; */
     }
 	
     nav ul li {
@@ -1195,6 +1205,9 @@ footer {
     /* ========================
        Detailed Content
        ======================== */
+	.detailed-content {
+		padding-top: 1%;
+	}
 
     .detailed-content .reviews-img, .news-img {
         clear: both;
@@ -1389,25 +1402,72 @@ footer {
       ============================== */
 
     nav {
-        margin-bottom: 2%;
+        /* margin-bottom: 2%; */
     }
 	
+	/* nav ul {
+    	min-height: 80px;
+    }
+	*/
+	
 	nav ul li {
-        margin: 1%;
+        /* margin: 1%; */
 		font-size: 1em;
     }
 
-    nav ul li:first-child {
-        margin-left: 5%;
-    }
-	
-	nav ul li a {
+    nav ul li a {
 		font-size: 1em;
 	}
 
     nav i {
         padding: 0 10px 0 15px;
     }
+	
+	#nav-spacer {
+		display: inline;
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		-webkit-box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-ms-flex-order: 1;
+		-webkit-order: 1;
+		order: 1;
+	}
+	
+	#nav-concerts {
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
+	}
+	
+	#nav-reviews {
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
+		order: 3;
+	}
+	
+	#nav-about {
+		-webkit-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-ms-flex-order: 4;
+		-webkit-order: 4;
+		order: 4;
+	}
+	
+	#nav-faq {
+		-webkit-box-ordinal-group: 5;
+		-moz-box-ordinal-group: 5;
+		-ms-flex-order: 5;
+		-webkit-order: 5;
+		order: 5;
+	}
 
     .top-story {
         clear: both;
@@ -1500,8 +1560,11 @@ footer {
     }
 
 	/* ==============================
-	   Detailled content
+	   Detailed content
 	   ============================== */
+	.detailed-content {
+		padding-top: 2%;
+	}
 
      .news-img, .reviews-img {
          width: 55%;
@@ -1622,13 +1685,41 @@ footer {
    /* ==============================
       nav
       ============================== */
-
+	/* nav ul {
+		min-height: 105px;
+	}
+	*/
+	
     nav ul li {
 /*        margin: 1%; */
     }
 	
 	nav ul li a {
 		font-size: 1.125em;
+	}
+}
+
+/* ==========================================================================
+   SPECIFIC HACKS FOR MICROSOFT EDGE.
+   These examples override the primary styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@supports (-ms-ime-align:auto) {
+	@media screen and (min-width:768px) {
+		nav ul {
+			min-height: 75px;
+		}
+	}
+	@media screen and (min-width:940px) {
+		nav ul {
+			min-height: 80px;
+		}
+	}
+	@media screen and (min-width:1250px) {
+		nav ul {
+			min-height: 105px;
+		}
 	}
 }
 
