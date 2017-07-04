@@ -3,3 +3,4 @@
 *.xlsx
 thumbs.db
 /unplugged/img/Thumbs.db
+unplugged/debug.log
